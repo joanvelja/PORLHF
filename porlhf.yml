@@ -1,0 +1,15 @@
+name: porlhf
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9  # Assuming the latest Python compatibility as per your setup.py
+  - pip=23.3.1
+  - numpy
+  - tqdm
+  - scikit-bio
+  - pip:
+    - gymnasium
+    - imitation
+    - stable-baselines3
+    - .  # This will run 'pip install .' on your local setup.py package
